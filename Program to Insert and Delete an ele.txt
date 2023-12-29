@@ -1,0 +1,27 @@
+ Program to Insert and Delete an element in an Array:
+a. Insert an element in an Array:
+Python code to insert an element:
+# given array (list)
+arr = [1, 2, 3, 4, 5]
+num=int(input("Enter a number to insert in array : "))
+index=int(input("Enter a index to insert value : "))
+if index >= len(arr):
+print("please enter index smaller than",len(arr))
+else:
+# insering element ‘num’ at ‘index’ position
+arr.insert(index, num)
+print("Array after inserting",num,"=",arr)
+
+Delete an element in an Array
+Python code to delete an element:
+#taking input to fix the size of the array
+size=int(input("Enter the number of elements you want in array: "))
+arr=[]
+# adding elements to the array
+for i in range(0,size):
+elem=int(input("Please give value for index "+str(i)+": "))
+arr.append(elem)
+num=int(input("Enter a number to remove from array : "))
+# removing element ‘num’ from the array.
+arr.remove(num)
+print("Array after removing",num,"=",arr)
